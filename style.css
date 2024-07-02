@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* home */
+header {
+  background-image: url(/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  list-style: none;
+  gap: 30px;
+}
+.navbar ul li a {
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+}
+.main {
+  position: relative;
+}
+.main h1 {
+  padding-top: 150px;
+  padding-left: 140px;
+  padding-bottom: 0;
+  font-weight: 100;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main p {
+  padding-top: 20px;
+  padding-left: 200px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.main i {
+  font-size: 22px;
+  color: azure;
+  position: absolute;
+  top: 90vh;
+  width: 20px;
+  margin-left: 50%;
+}
+/* about-section */
+
+.about-section {
+  background-image: url(/aboutimg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.about-container {
+  width: 650px;
+  height: 420px;
+  padding: 30px;
+  background-color: white;
+  text-align: center;
+  transform: translate(50%, 20%);
+}
+hr {
+  width: 550px;
+  margin-left: 20px;
+}
+.about {
+  width: 550px;
+}
+.about h2 {
+  margin: 10px;
+}
+.about p {
+  text-align: center;
+  margin: 0 30px;
+  padding-bottom: 20px;
+}
+.interests {
+  text-align: center;
+  margin: 30px 80px;
+  columns: 2;
+  width: 550px;
+}
+.interests ul {
+  text-align: justify;
+  margin: 0;
+  list-style-position: inside;
+}
+
+.passions {
+  margin: 30px 50px;
+  text-align: center;
+}
+/* portfolio-section */
+
+.portfolio {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 20px;
+  height: 70vh;
+}
+.portfolio h2 {
+  margin: 20px;
+}
+.portfolio-section {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: 180px 180px;
+  grid-template-areas:
+    "image project1 project2"
+    "image project3 project4";
+}
+.image-section img {
+  grid-area: image;
+  width: 480px;
+  height: 300px;
+  margin: 35px 0 0 20px;
+}
+.project1 {
+  grid-area: project1;
+  border: 1px solid black;
+  width: 350px;
+  margin: 20px 0 0 20px;
+  border-radius: 10px;
+}
+.project2 {
+  grid-area: project2;
+  border: 1px solid black;
+  width: 350px;
+  margin: 20px 0 0 20px;
+  border-radius: 10px;
+}
+.project3 {
+  grid-area: project3;
+  border: 1px solid black;
+  width: 350px;
+  margin: 20px 0 10px 20px;
+  border-radius: 10px;
+}
+.project4 {
+  grid-area: project4;
+  border: 1px solid black;
+  width: 350px;
+  margin: 20px 0 10px 20px;
+  border-radius: 10px;
+}
+.portfolio-section h3 {
+  padding: 8px;
+}
+.portfolio-section a {
+  text-decoration: none;
+  color: black;
+}
+.portfolio-section .para {
+  font-size: 16px;
+  padding: 8px 12px;
+}
+/* contact-section */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+footer ul li,
+footer ul li a,
+footer p {
+  list-style: none;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(30%);
+  transition: all 4s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
